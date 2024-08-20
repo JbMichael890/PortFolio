@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa6";
 import Profile from "../../assets/WhatsApp Image 2024-07-30 at 11.58.50_b4276ce2.jpg";
+import { MdArrowOutward } from "react-icons/md";
 
 const HomePageOne = () => {
   return (
@@ -16,7 +17,7 @@ const HomePageOne = () => {
           </p>
           <LogoHold>
             <button>
-              Contact Me <main>●</main>
+              Contact Me <main>●</main> <span><MdArrowOutward/></span>
             </button>
             <nav>in</nav>
             <nav>
@@ -75,6 +76,27 @@ const LogoHold = styled.div`
   display: flex;
   align-items: center;
   button {
+    @media (max-width: 500px) {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span{
+      display: none;
+
+      @media (max-width: 500px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        height: 40px;
+        width: 40px;
+        color: #eee;
+        background-color: #0a0a0a;
+        border-radius: 20px;
+      }
+    }
     height: 45px;
     width: 135px;
     border-radius: 25px;
@@ -102,5 +124,8 @@ const LogoHold = styled.div`
   }
   main {
     font-weight: 900;
+    @media (max-width: 500px) {
+        display: none;
+      }
   }
 `;

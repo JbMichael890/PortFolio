@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa6";
+import { RiDownload2Line } from "react-icons/ri";
 
 const AboutPageOne = () => {
   return (
@@ -26,9 +27,9 @@ const AboutPageOne = () => {
           </TextOne>
           <LogoHold>
             <button>
-              DOWNLOAD RESUME <main>●</main>{" "}
+              DOWNLOAD RESUME <main>●</main> <span><RiDownload2Line/></span>
             </button>
-            <nav>in</nav>
+            <In><nav>in</nav></In>
             <nav>
               <FaGithub />
             </nav>
@@ -80,6 +81,12 @@ const LogoHold = styled.div`
   align-items: center;
   /* justify-content: center; */
   button {
+    @media (max-width: 500px) {
+    width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
     height: 50px;
     width: 195px;
     border-radius: 24px;
@@ -93,6 +100,21 @@ const LogoHold = styled.div`
     background-color: #d3e97a;
     font-size: 15px;
     font-weight: 550;
+    span{
+      display: none;
+
+      @media (max-width: 500px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        height: 40px;
+        width: 40px;
+        color: #eee;
+        background-color: #0a0a0a;
+        border-radius: 20px;
+      }
+    }
   }
 
   nav {
@@ -110,6 +132,12 @@ const LogoHold = styled.div`
   main {
     font-weight: 900;
     margin-bottom: 3px;
+    @media (max-width: 500px) {
+        display: none;
+      }
   }
+ 
 `;
-// const Container = styled.div``
+const In = styled.div`
+font-weight: 700;
+`

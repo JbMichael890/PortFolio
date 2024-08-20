@@ -64,9 +64,11 @@ const HomePageFour = () => {
               <hr />
             </Logo>
             <LogoTwo>
-              <nav>
-                SEE ON GITHUB <FaGithub />
-              </nav>
+              <Link to={"https://github.com/JbMichael890/Fabric-Store"}>
+                <nav>
+                  SEE ON GITHUB <FaGithub />
+                </nav>
+              </Link>
               <hr />
             </LogoTwo>
           </TextThree>
@@ -164,9 +166,7 @@ const Role = styled.div`
 const Logo = styled.div`
   cursor: pointer;
   margin-right: 10px;
-  Link {
-    text-decoration: none;
-  }
+  
   nav {
     font-weight: 500;
     color: #d3e97a;
@@ -182,8 +182,16 @@ const TextThree = styled.div`
   display: flex;
   align-items: center;
   margin-top: 30px;
+  
+  nav {
+    font-weight: 500;
+    color: #d3e97a;
+  }
   h4 {
     margin-bottom: -5px;
+  }
+  Link {
+    text-decoration: none;
   }
 `;
 const Year = styled.div`

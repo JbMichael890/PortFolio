@@ -64,12 +64,12 @@ const Wrapper = styled.div`
 const TextHold = styled.div`
   p {
     font-size: 18px;
-    @media (max-width: 500px) {
+    /* @media (max-width: 500px) {
       font-size: 15px;
       br {
         display: none;
       }
-    }
+    } */
   }
 `;
 const TextOne = styled.div`
@@ -93,6 +93,11 @@ const Bottom = styled.div`
     font-size: 18px;
     font-weight: 500;
     color: #d3e97a;
+    br {
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
   }
 `;
 const Front = styled.div`

@@ -166,7 +166,7 @@ const Icon = styled.div`
   align-items: center;
   margin-top: 20px;
   hr {
-    width: 110px;
+    width: 120px;
     border: 1px solid #d3e97a;
     margin-top: -0.1px;
   }
