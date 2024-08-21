@@ -11,7 +11,7 @@ const HomePageFour = () => {
         <HolderOne>
           <CardHold>
             <ButtonHold>
-              <button>Conceptual Work</button>
+              <button>Challenge</button>
             </ButtonHold>
             <ImgHold>
               <img src={Image} alt="" />
@@ -21,16 +21,10 @@ const HomePageFour = () => {
         <TextHold>
           <TextOne>
             <nav>
-              Promotional landing page for our <br />
-              favorite show
+              E-commerce product page
             </nav>
             <p>
-              Teamed up with a designer to breathe life into a promotional
-              webpage <br /> for our beloved show,Adventure Time. Delivered a
-              fully responsive <br />
-              design with dynamic content capabilities, seamlessly integrating a{" "}
-              <br /> newsletter feature to keep fans updated with the latest
-              adventures.
+              Successfully crafted an engaging product <br /> page featuring a dynamic lightbox gallery and prices <br /> of a commodity.
             </p>
           </TextOne>
           <TextTwo>
@@ -41,7 +35,7 @@ const HomePageFour = () => {
             <HoldTwo>
               <Year>
                 <main>Year</main>
-                <main>2023</main>
+                <main>2024</main>
               </Year>
               <hr />
             </HoldTwo>
@@ -55,7 +49,9 @@ const HomePageFour = () => {
           </TextTwo>
           <TextThree>
             <Logo>
-              <Link to={"https://fabric-store.netlify.app"}>
+              <Link to={"https://fabric-store.netlify.app"} style={{
+                textDecoration: "none"
+              }}>
                 <nav>
                   LIVE DEMO <HiOutlineArrowUpRight />
                 </nav>
@@ -64,7 +60,9 @@ const HomePageFour = () => {
               <hr />
             </Logo>
             <LogoTwo>
-              <Link to={"https://github.com/JbMichael890/Fabric-Store"}>
+              <Link to={"https://github.com/JbMichael890/Fabric-Store"} style={{
+                textDecoration: "none"
+              }}>
                 <nav>
                   SEE ON GITHUB <FaGithub />
                 </nav>
@@ -189,9 +187,6 @@ const TextThree = styled.div`
   }
   h4 {
     margin-bottom: -5px;
-  }
-  Link {
-    text-decoration: none;
   }
 `;
 const Year = styled.div`

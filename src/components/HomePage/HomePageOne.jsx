@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa6";
+import { SiLinktree } from "react-icons/si";
 import Profile from "../../assets/WhatsApp Image 2024-07-30 at 11.58.50_b4276ce2.jpg";
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 
 const HomePageOne = () => {
   return (
@@ -17,12 +20,28 @@ const HomePageOne = () => {
           </p>
           <LogoHold>
             <button>
-              Contact Me <main>●</main> <span><MdArrowOutward/></span>
+              Contact Me <main>●</main>{" "}
+              <span>
+                <MdArrowOutward />
+              </span>
             </button>
-            <nav>in</nav>
-            <nav>
-              <FaGithub />
-            </nav>
+
+            <Link
+              to={"https://github.com/JbMichael890"}
+              style={{ textDecoration: "none" }}
+            >
+              <nav>
+                <FaGithub />
+              </nav>
+            </Link>
+            <Link
+              to={"https://linktr.ee/jbmichael"}
+              style={{ textDecoration: "none" }}
+            >
+              <nav>
+                <SiLinktree />
+              </nav>
+            </Link>
           </LogoHold>
         </TextHold>
         <ImgHold>
@@ -55,7 +74,6 @@ const ImgHold = styled.div`
     border-radius: 10px;
     @media (max-width: 500px) {
       width: 100%;
-      /* height: 500px; */
     }
   }
 `;
@@ -63,13 +81,17 @@ const TextHold = styled.div`
   h1 {
     color: white;
     font-size: 40px;
-
     @media (max-width: 600px) {
-      font-size: 39px;
+      font-size: 35px;
     }
   }
   p {
     color: #ddd;
+    @media (max-width: 600px) {
+      br {
+        display: none;
+      }
+    }
   }
 `;
 const LogoHold = styled.div`
@@ -77,12 +99,12 @@ const LogoHold = styled.div`
   align-items: center;
   button {
     @media (max-width: 500px) {
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  span{
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    span {
       display: none;
 
       @media (max-width: 500px) {
@@ -120,12 +142,12 @@ const LogoHold = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    font-size: 25px;
+    font-size: 22px;
   }
   main {
     font-weight: 900;
     @media (max-width: 500px) {
-        display: none;
-      }
+      display: none;
+    }
   }
 `;

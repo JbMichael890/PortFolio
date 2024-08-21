@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Profile from "../../assets/WhatsApp Image 2024-07-30 at 11.58.50_b4276ce2.jpg"
+import Profile from "../../assets/WhatsApp Image 2024-07-30 at 11.58.50_b4276ce2.jpg";
 const HomPageFive = () => {
   return (
     <Container>
@@ -20,7 +20,7 @@ const HomPageFive = () => {
             problems. Currently, i"m exploring Reactjs, <br /> Webflow and a bit
             of Designing. While i am not programming, i enjoy playing
             Basketball, <br /> Listening to Music and Photography. Learning more
-            to improve skills
+            to improve skills.
           </p>
           <Icon>
             <Logo>
@@ -68,11 +68,19 @@ const Holder = styled.div`
     font-size: 34px;
     font-weight: 450;
     @media (max-width: 500px) {
-      display: none;
+      font-size: 27px;
+      br {
+        display: none;
+      }
     }
   }
   p {
     font-size: 18px;
+    @media (max-width: 500px) {
+      br {
+        display: none;
+      }
+    }
   }
 `;
 const Logo = styled.div`
@@ -86,7 +94,6 @@ const Logo = styled.div`
     color: #d3e97a;
     margin-top: 30px;
     font-size: 17px;
-    
   }
   a {
     text-decoration: none;
@@ -103,14 +110,14 @@ const Icon = styled.div`
   }
 `;
 const Image = styled.div`
-margin-top: 20px;
+  margin-top: 20px;
   img {
     width: 300px;
     border-radius: 10px;
     display: none;
     @media (max-width: 500px) {
       width: 100%;
-      /* height: 500px; */
       display: flex;
     }
-  }`
+  }
+`;

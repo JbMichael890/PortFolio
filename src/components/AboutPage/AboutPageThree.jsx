@@ -29,6 +29,9 @@ const AboutPageThree = () => {
             <CardFour>
               <nav>REACT</nav>
             </CardFour>
+            <CardTwelve>
+              <nav>REACTJS</nav>
+            </CardTwelve>
 
             <CardFive>
               <nav>SWEATALERT</nav>
@@ -69,8 +72,8 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: space-around;
+  width: 85%;
   flex-wrap: wrap;
   h1 {
     font-size: 40px;
@@ -82,8 +85,23 @@ const Wrapper = styled.div`
     }
   }
 `;
-const TextHold = styled.div``;
-const Text = styled.div``;
+const TextHold = styled.div`
+width: 50%;
+/* flex-wrap: wrap; */
+@media (max-width: 500px) {
+  width: 100%;
+}
+`;
+const Text = styled.div`
+
+p{
+ @media (max-width: 500px) {
+  br{
+  display: none;
+}
+ }
+}
+`;
 const Card = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +133,7 @@ const CardTwo = styled.div`
   color: #ddd;
   border-radius: 25px;
   border: 1px solid #ddd;
-  margin: 12px 10px;
+  margin: 10px 10px;
 `;
 const CardThree = styled.div`
   display: flex;
@@ -126,7 +144,7 @@ const CardThree = styled.div`
   color: #ddd;
   border-radius: 25px;
   border: 1px solid #ddd;
-  margin: 12px 10px;
+  margin: 10px 10px;
 `;
 const CardFour = styled.div`
   display: flex;
@@ -137,7 +155,7 @@ const CardFour = styled.div`
   color: #ddd;
   border-radius: 25px;
   border: 1px solid #ddd;
-  margin: 12px 10px;
+  margin: 10px 10px;
 `;
 const CardFive = styled.div`
   display: flex;
@@ -148,7 +166,7 @@ const CardFive = styled.div`
   color: #ddd;
   border-radius: 25px;
   border: 1px solid #ddd;
-  margin: 12px 10px;
+  margin: 10px 10px;
 `;
 const CardSix = styled.div`
   display: flex;
@@ -159,7 +177,7 @@ const CardSix = styled.div`
   color: #ddd;
   border-radius: 25px;
   border: 1px solid #ddd;
-  margin: 12px 10px;
+  margin: 10px 10px;
 `;
 const CardSeven = styled.div`
   display: flex;
@@ -183,7 +201,12 @@ const CardEight = styled.div`
   border: 1px solid #ddd;
   margin: 12px 12px;
 `;
-const Header = styled.div``;
+const Header = styled.div`
+width: 30%;
+@media (max-width: 700px) {
+  width: 100%;
+}
+`;
 const CardNine = styled.div`
 display: flex;
   justify-content: center;
@@ -218,3 +241,15 @@ display: flex;
   margin: 12px 12px;
 
 `;
+const CardTwelve = styled.div`
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53px;
+  width: 120px;
+  color: #ddd;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  margin: 10px 10px;
+
+`

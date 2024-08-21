@@ -58,18 +58,21 @@ const Wrapper = styled.div`
 
   h1 {
     font-size: 50px;
-    inline-size: px;
+    /* inline-size: 1px; */
+    @media (max-width: 500px) {
+      font-size: 42px;
+    }
   }
 `;
 const TextHold = styled.div`
   p {
-    font-size: 18px;
-    /* @media (max-width: 500px) {
-      font-size: 15px;
+    font-size: 20px;
+    @media (max-width: 500px) {
+      font-size: 100%;
       br {
         display: none;
       }
-    } */
+    }
   }
 `;
 const TextOne = styled.div`

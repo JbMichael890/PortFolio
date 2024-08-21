@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa6";
+import { SiLinktree } from "react-icons/si";
 import { RiDownload2Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const AboutPageOne = () => {
   return (
@@ -29,10 +31,22 @@ const AboutPageOne = () => {
             <button>
               DOWNLOAD RESUME <main>●</main> <span><RiDownload2Line/></span>
             </button>
-            <In><nav>in</nav></In>
-            <nav>
-              <FaGithub />
-            </nav>
+            <Link
+              to={"https://github.com/JbMichael890"}
+              style={{ textDecoration: "none" }}
+            >
+              <nav>
+                <FaGithub />
+              </nav>
+            </Link>
+            <Link
+              to={"https://linktr.ee/jbmichael"}
+              style={{ textDecoration: "none" }}
+            >
+              <nav>
+                <SiLinktree />
+              </nav>
+            </Link>
           </LogoHold>
         </TextHold>
       </Wrapper>
@@ -47,7 +61,6 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
   min-height: 90vh;
 `;
 const Wrapper = styled.div`
@@ -55,7 +68,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* align-items: center; */
   width: 85%;
   h1{
     font-size: 50px;
@@ -72,14 +84,10 @@ const TextOne = styled.div`
   nav {
     font-size: 29px;
   }
-  /* p{
-    font-size: ;
-  } */
 `;
 const LogoHold = styled.div`
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   button {
     @media (max-width: 500px) {
     width: 225px;
@@ -91,7 +99,6 @@ const LogoHold = styled.div`
     width: 195px;
     border-radius: 24px;
     border: none;
-    
     cursor: pointer;
     margin-right: 5px;
     display: flex;
@@ -102,7 +109,6 @@ const LogoHold = styled.div`
     font-weight: 550;
     span{
       display: none;
-
       @media (max-width: 500px) {
         display: flex;
         justify-content: center;
@@ -138,6 +144,4 @@ const LogoHold = styled.div`
   }
  
 `;
-const In = styled.div`
-font-weight: 700;
-`
+

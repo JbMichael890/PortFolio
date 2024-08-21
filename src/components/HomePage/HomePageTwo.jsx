@@ -61,7 +61,9 @@ const HomePageTwo = () => {
           </TextTwo>
           <TextThree>
             <Logo>
-              <Link to={"https://movie-app-txtr.vercel.app"}>
+              <Link to={"https://movie-app-txtr.vercel.app"} style={{
+                textDecoration: "none"
+              }}>
                 <nav>
                   {" "}
                   LIVE DEMO <HiOutlineArrowUpRight />
@@ -72,7 +74,9 @@ const HomePageTwo = () => {
             </Logo>
 
             <LogoTwo>
-              <Link to={"https://github.com/JbMichael890/Movie-App"}>
+              <Link to={"https://github.com/JbMichael890/Movie-App"} style={{
+                textDecoration: "none"
+              }}>
                 <nav>
                   SEE ON GITHUB <FaGithub />
                 </nav>
@@ -193,9 +197,6 @@ const TextThree = styled.div`
   cursor: pointer;
   h4 {
     margin-bottom: -5px;
-  }
-  Link {
-    text-decoration: none;
   }
   nav {
     font-weight: 500;

@@ -50,7 +50,9 @@ const HomPageThree = () => {
             </HoldThree>
             <Icon>
               <Logo>
-                <Link to={"https://nba-blog-237u.vercel.app"}>
+                <Link to={"https://nba-blog-237u.vercel.app"} style={{
+                textDecoration: "none"
+              }}>
                   <nav>
                     VIEW PROJECT <HiOutlineArrowUpRight />
                   </nav>
@@ -149,9 +151,6 @@ const Logo = styled.div`
     font-weight: 500;
     color: #d3e97a;
     margin-top: 30px;
-  }
-  Link {
-    text-decoration: none;
   }
 `;
 const TextTwo = styled.div`
