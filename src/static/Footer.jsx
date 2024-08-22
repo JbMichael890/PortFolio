@@ -103,7 +103,7 @@ const TextOne = styled.div`
     font-size: 18px;
     display: flex;
     @media (max-width: 500px) {
-      font-size: 16.9px;
+      font-size: 15.5px;
     }
     
   }
@@ -184,7 +184,7 @@ justify-content: center;
 align-items: center;
 height: 50px;
 width: 50px;
-background-color: red;
+/* background-color: red; */
   
 `
 const ButtonHold = styled.div`

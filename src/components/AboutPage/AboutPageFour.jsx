@@ -52,15 +52,19 @@ const Wrapper = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-wrap: wrap;
   width: 85%;
 
   h1 {
     font-size: 50px;
-    /* inline-size: 1px; */
     @media (max-width: 500px) {
       font-size: 42px;
+    }
+    @media (max-width: 450px) {
+      font-size: 40px;
+    }
+    @media (max-width: 400px) {
+      font-size: 35px;
     }
   }
 `;
@@ -119,4 +123,3 @@ const Front = styled.div`
     }
   }
 `;
-// const Bottom = styled.div``

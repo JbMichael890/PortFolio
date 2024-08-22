@@ -84,6 +84,9 @@ const TextHold = styled.div`
     @media (max-width: 600px) {
       font-size: 35px;
     }
+    @media (max-width: 450px) {
+      font-size: 32px;
+    }
   }
   p {
     color: #ddd;

@@ -29,7 +29,10 @@ const AboutPageOne = () => {
           </TextOne>
           <LogoHold>
             <button>
-              DOWNLOAD RESUME <main>●</main> <span><RiDownload2Line/></span>
+              DOWNLOAD RESUME <main>●</main>{" "}
+              <span>
+                <RiDownload2Line />
+              </span>
             </button>
             <Link
               to={"https://github.com/JbMichael890"}
@@ -69,11 +72,17 @@ const Wrapper = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   width: 85%;
-  h1{
+  h1 {
     font-size: 50px;
   }
+  /* @media (max-width: 450px) {
+    text-align: center;
+  } */
 `;
 const TextHold = styled.div`
+  @media (max-width: 450px) {
+    width: 100%;
+  }
   br {
     @media (max-width: 600px) {
       display: none;
@@ -83,18 +92,16 @@ const TextHold = styled.div`
 const TextOne = styled.div`
   nav {
     font-size: 29px;
+     @media (max-width: 450px) {
+      font-size: 24px;
+      
+    }
   }
 `;
 const LogoHold = styled.div`
   display: flex;
   align-items: center;
   button {
-    @media (max-width: 500px) {
-    width: 225px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
     height: 50px;
     width: 195px;
     border-radius: 24px;
@@ -107,7 +114,7 @@ const LogoHold = styled.div`
     background-color: #d3e97a;
     font-size: 15px;
     font-weight: 550;
-    span{
+    span {
       display: none;
       @media (max-width: 500px) {
         display: flex;
@@ -120,6 +127,24 @@ const LogoHold = styled.div`
         background-color: #0a0a0a;
         border-radius: 20px;
       }
+      @media (max-width: 400px) {
+        font-size: 17px;
+        height: 29px;
+        width: 29px;
+        border-radius: 20px;
+      }
+    }
+    @media (max-width: 500px) {
+      width: 225px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media (max-width: 450px) {
+      font-size: 13px;
+    }
+    @media (max-width: 400px) {
+      font-size: 10px;
     }
   }
 
@@ -134,14 +159,13 @@ const LogoHold = styled.div`
     align-items: center;
     border-radius: 25px;
     font-size: 25px;
+   
   }
   main {
     font-weight: 900;
     margin-bottom: 3px;
     @media (max-width: 500px) {
-        display: none;
-      }
+      display: none;
+    }
   }
- 
 `;
-
