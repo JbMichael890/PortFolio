@@ -77,7 +77,7 @@ const Holder = styled.div`
       font-size: 25px;
     }
     @media (max-width: 350px) {
-      font-size: 20px;
+      font-size: 23px;
     }
   }
   p {
@@ -92,6 +92,9 @@ const Holder = styled.div`
     }
     @media (max-width: 400px) {
       font-size: 16px;
+    }
+    @media (max-width: 350px) {
+      font-size: 14px;
     }
   }
 `;

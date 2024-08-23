@@ -20,8 +20,10 @@ const SideBar = () => {
 
         <Holder>
          <a href="/">
-         <nav>Work</nav>
+         <nav>Home</nav>
          </a>
+         <a href="/project">
+         <nav>Project</nav></a>
          <a href="/about">
          <nav>About</nav>
 

@@ -86,6 +86,9 @@ const Wrapper = styled.div`
     @media (max-width: 450px) {
       font-size: 38px;
     }
+    @media (max-width: 400px) {
+      font-size: 33px;
+    }
   }
 `;
 const TextHold = styled.div`

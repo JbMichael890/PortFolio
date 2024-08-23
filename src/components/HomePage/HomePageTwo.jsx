@@ -61,9 +61,12 @@ const HomePageTwo = () => {
           </TextTwo>
           <TextThree>
             <Logo>
-              <Link to={"https://movie-app-txtr.vercel.app"} style={{
-                textDecoration: "none"
-              }}>
+              <Link
+                to={"https://movie-app-txtr.vercel.app"}
+                style={{
+                  textDecoration: "none",
+                }}
+              >
                 <nav>
                   {" "}
                   LIVE DEMO <HiOutlineArrowUpRight />
@@ -74,9 +77,12 @@ const HomePageTwo = () => {
             </Logo>
 
             <LogoTwo>
-              <Link to={"https://github.com/JbMichael890/Movie-App"} style={{
-                textDecoration: "none"
-              }}>
+              <Link
+                to={"https://github.com/JbMichael890/Movie-App"}
+                style={{
+                  textDecoration: "none",
+                }}
+              >
                 <nav>
                   SEE ON GITHUB <FaGithub />
                 </nav>
@@ -134,7 +140,6 @@ const HolderOne = styled.div`
       display: none;
     }
   }
-  
 `;
 const CardHold = styled.div`
   display: flex;
@@ -166,6 +171,9 @@ const TextOne = styled.div`
     @media (max-width: 400px) {
       font-size: 26px;
     }
+    @media (max-width: 350px) {
+      font-size: 25px;
+    }
   }
   p {
     font-size: 18px;
@@ -190,7 +198,7 @@ const Role = styled.div`
 const Logo = styled.div`
   cursor: pointer;
   margin-right: 10px;
- 
+
   nav {
     font-weight: 500;
     color: #d3e97a;

@@ -98,6 +98,9 @@ const Card = styled.div`
   @media (max-width: 500px) {
     width: 100%;
   }
+  @media (max-width: 400px) {
+    height: 300px;
+  }
   img {
     width: 500px;
     height: 300px;
@@ -105,6 +108,9 @@ const Card = styled.div`
     border-radius: 15px;
     @media (max-width: 600px) {
       width: 90%;
+    }
+    @media (max-width: 400px) {
+      height: 230px;
     }
   }
 `;
@@ -114,6 +120,9 @@ const TextOne = styled.div`
     font-size: 35px;
     @media (max-width: 400px) {
       font-size: 27px;
+    }
+    @media (max-width: 350px) {
+      font-size: 25px;
     }
   }
   p {

@@ -28,12 +28,15 @@ const Header = () => {
 
           <Holder>
             <a href="/">
-              <nav>Work</nav>
+              <nav>Home</nav>
             </a>
+            <a href="/project">
+            <nav>Project</nav></a>
             <a href="/about">
               <nav>About</nav>
             </a>
-            <nav>Contact</nav>
+           <a href="/contact">
+           <nav>Contact</nav></a>
           </Holder>
         </Wrapper>
         <Sidenav onClick={getToggle}>
@@ -71,15 +74,16 @@ const Holder = styled.div`
   nav {
     margin: 0px 10px;
     color: white;
+    cursor: pointer;
     font-weight: 500;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
     display: none;
   }
 `;
 const Sidenav = styled.div`
   display: none;
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
     display: flex;
     font-size: 25px;
     cursor: pointer;

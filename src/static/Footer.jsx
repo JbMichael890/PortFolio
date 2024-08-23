@@ -101,6 +101,9 @@ const TextOne = styled.div`
     @media (max-width: 450px) {
       font-size: 38px;
     }
+    @media (max-width: 400px) {
+      font-size: 35px;
+    }
   }
   p {
     font-size: 18px;
@@ -108,12 +111,16 @@ const TextOne = styled.div`
     @media (max-width: 500px) {
       font-size: 15.5px;
     }
+    @media (max-width:400px) {
+      font-size: 13px;
+    }
     
   }
   main {
     font-size: 18px;
     display: flex;
     margin-top: -19px;
+
   }
   span {
     margin-left: 5px;
@@ -154,8 +161,6 @@ const InputHold = styled.div`
       width: 100%;
     }
   }
-
- 
   main {
     margin: 10px 0px;
   }
@@ -189,7 +194,6 @@ background-color: #f5f8fc;
   transition: all 350ms;
   cursor: pointer;
   margin-right: 5px;
-/* background-color: red; */
 &:hover{
   background-color: #007bb6;
 }
@@ -212,9 +216,6 @@ button {
     border: none;
     margin-top: 30px;
     cursor: pointer;
-    @media (max-width: 500px) {
-      /* margin-left: 70px; */
-    }
   }
   
 `

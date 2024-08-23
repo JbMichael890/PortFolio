@@ -138,6 +138,9 @@ const CardHold = styled.div`
   @media (max-width: 500px) {
     width: 110%;
   }
+  @media (max-width: 400px) {
+    width: 105%;
+  }
 `;
 const TextHold = styled.div``;
 const TextOne = styled.div`
@@ -145,6 +148,9 @@ const TextOne = styled.div`
     font-size: 32px;
     @media (max-width: 400px) {
       font-size: 26px;
+    }
+    @media (max-width: 350px) {
+      font-size: 23px;
     }
   }
   p {
