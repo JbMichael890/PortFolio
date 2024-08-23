@@ -121,7 +121,12 @@ const HolderOne = styled.div`
     }
     @media (max-width: 500px) {
       font-size: 35px;
-      height: 25px;
+    }
+    @media (max-width: 400px) {
+      font-size: 30px;
+    }
+    @media (max-width: 380px) {
+      font-size: 28px;
     }
   }
   br {
@@ -129,9 +134,7 @@ const HolderOne = styled.div`
       display: none;
     }
   }
-  @media (max-width: 600px) {
-    align-items: center;
-  }
+  
 `;
 const CardHold = styled.div`
   display: flex;
@@ -149,11 +152,20 @@ const CardHold = styled.div`
     height: 230px;
     justify-content: space-between;
   }
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 `;
 const TextHold = styled.div``;
 const TextOne = styled.div`
   nav {
     font-size: 32px;
+    @media (max-width: 450px) {
+      font-size: 28px;
+    }
+    @media (max-width: 400px) {
+      font-size: 26px;
+    }
   }
   p {
     font-size: 18px;

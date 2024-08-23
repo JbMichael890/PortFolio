@@ -73,6 +73,12 @@ const Holder = styled.div`
         display: none;
       }
     }
+    @media (max-width: 450px) {
+      font-size: 25px;
+    }
+    @media (max-width: 350px) {
+      font-size: 20px;
+    }
   }
   p {
     font-size: 18px;
@@ -80,6 +86,12 @@ const Holder = styled.div`
       br {
         display: none;
       }
+    }
+    @media (max-width: 450px) {
+      font-size: 17px;
+    }
+    @media (max-width: 400px) {
+      font-size: 16px;
     }
   }
 `;

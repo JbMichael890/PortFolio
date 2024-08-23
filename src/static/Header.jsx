@@ -2,9 +2,17 @@ import { MdOutlineMenu } from "react-icons/md";
 import SideBar from "./SideBar";
 import styled from "styled-components";
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const Header = () => {
+  // const alertUser = () => {
+  //   Swal.fire({
+  //     title: "Update Coming",
+  //     text: "The detail page is not yet available",
+  //     icon: "info",
+  //   });
   const [toggle, setToggle] = useState(false);
+  
 
   const getToggle = () => {
     setToggle(!toggle);

@@ -112,6 +112,9 @@ const TextHold = styled.div``;
 const TextOne = styled.div`
   nav {
     font-size: 35px;
+    @media (max-width: 400px) {
+      font-size: 27px;
+    }
   }
   p {
     font-size: 17px;

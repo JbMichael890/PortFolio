@@ -1,16 +1,16 @@
 
 import styled from 'styled-components'
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 
 
 const SideBar = () => {
-  // const alertUser = () => {
-  //   Swal.fire({
-  //     title: "Update Coming",
-  //     text: "The detail page is not yet available",
-  //     icon: "info",
-  //   });
-  // }
+  const alertUser = () => {
+    Swal.fire({
+      title: "Update Coming",
+      text: "The detail page is not yet available",
+      icon: "info",
+    });
+  }
   return (
     <Container>
         <Wrapper>
@@ -26,7 +26,7 @@ const SideBar = () => {
          <nav>About</nav>
 
          </a>
-          <nav>Contact</nav>
+          <nav onClick={alertUser}>Contact</nav>
         </Holder>
         </Wrapper>
     </Container>

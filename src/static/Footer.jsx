@@ -98,6 +98,9 @@ const TextOne = styled.div`
     @media (max-width: 500px) {
       font-size: 40px;
     }
+    @media (max-width: 450px) {
+      font-size: 38px;
+    }
   }
   p {
     font-size: 18px;
@@ -129,14 +132,12 @@ const LogoHold = styled.div`
   margin: 35px 0px;
   cursor: pointer;
   nav {
-    margin: 0px 10px;
-    color: #d3e97a;
-    font-size: 30px;
+    color: #25810e;
+    font-size: 20px;
   }
 `;
 const InputHold = styled.div`
   width: 45%;
-  /* flex-wrap: wrap; */
   @media (max-width: 500px) {
     width: 100%;
   }
@@ -184,7 +185,14 @@ justify-content: center;
 align-items: center;
 height: 50px;
 width: 50px;
+background-color: #f5f8fc;
+  transition: all 350ms;
+  cursor: pointer;
+  margin-right: 5px;
 /* background-color: red; */
+&:hover{
+  background-color: #007bb6;
+}
   
 `
 const ButtonHold = styled.div`
@@ -210,7 +218,58 @@ button {
   }
   
 `
-const Git = styled.div``
-const Twitter = styled.div``
-const Insta = styled.div``
-const Call = styled.div``
+const Git = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 50px;
+background-color: #f5f8fc;
+  transition: all 350ms;
+  cursor: pointer;
+  margin-right: 5px;
+  &:hover{
+    background-color: #32ccfe;
+  }`
+const Twitter = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 50px;
+background-color: #f5f8fc;
+  transition: all 350ms;
+  cursor: pointer;
+  margin-right: 5px;
+  &:hover{
+    background-color: #FDCC91;
+  }
+  `
+const Insta = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 50px;
+background-color: #f5f8fc;
+  transition: all 350ms;
+  cursor: pointer;
+  &:hover{
+    background-color: #EC4A89;
+  }
+  `
+const Call = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 50px;
+background-color: #f5f8fc;
+  transition: all 350ms;
+  cursor: pointer;
+  margin-right: 5px;
+  &:hover{
+    background-color: #3a589b;
+    color: white;
+  }
+  `

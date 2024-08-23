@@ -135,11 +135,17 @@ const CardHold = styled.div`
     height: 230px;
     justify-content: space-between;
   }
+  @media (max-width: 500px) {
+    width: 110%;
+  }
 `;
 const TextHold = styled.div``;
 const TextOne = styled.div`
   nav {
     font-size: 32px;
+    @media (max-width: 400px) {
+      font-size: 26px;
+    }
   }
   p {
     font-size: 18px;
