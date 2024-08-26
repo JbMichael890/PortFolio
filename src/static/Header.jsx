@@ -2,7 +2,7 @@ import { MdOutlineMenu } from "react-icons/md";
 import SideBar from "./SideBar";
 import styled from "styled-components";
 import { useState } from "react";
-import Swal from "sweetalert2";
+
 
 const Header = () => {
   // const alertUser = () => {

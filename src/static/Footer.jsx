@@ -4,8 +4,16 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
+import Swal from "sweetalert2";
 
 const Footer = () => {
+  const alertUser = () => {
+    Swal.fire({
+      title: "Update Coming",
+      text: "The detail page is not yet available",
+      icon: "info",
+    });
+  }
   return (
     <Containee>
       <Wrapper>
@@ -25,14 +33,20 @@ const Footer = () => {
           </main>
 
           <LogoHold>
-            <Call>
+         <a href="09058118114">
+         <Call>
               <nav><FiPhoneCall/></nav>
             </Call>
-           <Fb> <nav><FaFacebook/></nav></Fb>
+         </a>
+          <a href="https://web.facebook.com/mickey.frosh.39948">
+          <Fb> <nav><FaFacebook/></nav></Fb>
+          </a>
           <Git>
+          <a href="https://github.com/JbMichael890">
           <nav>
               <FaGithub />
             </nav>
+          </a>
           </Git>
          <Twitter>
          <nav>
@@ -65,7 +79,7 @@ const Footer = () => {
             <textarea role="1" />
           </HoldFour>
         <ButtonHold>
-        <button>SUBMIT</button>
+        <button onClick={alertUser}>SUBMIT</button>
         </ButtonHold>
         </InputHold>
       </Wrapper>
