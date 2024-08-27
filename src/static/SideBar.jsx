@@ -14,9 +14,9 @@ const SideBar = () => {
   return (
     <Container>
         <Wrapper>
-        <NameHold>
+        {/* <NameHold>
           <h3>Akinyele Michael</h3>
-        </NameHold>
+        </NameHold> */}
 
         <Holder>
          <a href="/">
@@ -59,6 +59,6 @@ background-color: #1c1c1f;
     text-decoration: none;
   }
 `
-const NameHold = styled.div``
+// const NameHold = styled.div``
 const Holder = styled.div`
 `

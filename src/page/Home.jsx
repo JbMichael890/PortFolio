@@ -1,3 +1,4 @@
+import styled from "styled-components"
 import HomePageTwo from "../components/HomePage/HomePageOne"
 import HomePageOne from "../components/HomePage/HomePageTwo"
 import HomPageFive from "../components/HomePage/HomPageFive"
@@ -7,15 +8,24 @@ import HomPageThree from "../components/HomePage/HomPageThree"
 
 const Home = () => {
   return (
-    <div>
-      
-      <HomePageTwo/>
+   <Container>
+       <HomePageTwo/>
       <HomePageOne/>
       <HomPageThree/>
       <HomPageFour/>
       <HomPageFive/>
-    </div>
+   </Container>
   )
 }
 
 export default Home
+const Container = styled.div`
+min-height: calc(100vh-20vh);
+margin-top: px;
+overflow-x: hidden;
+background-color: black;
+
+
+
+
+`

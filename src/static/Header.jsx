@@ -56,6 +56,9 @@ const Container = styled.div`
   width: 100%;
   background-color: black;
   color: #fff;
+  z-index: 999;
+  left: 0;
+  right: 0;
 `;
 const Wrapper = styled.div`
   display: flex;
