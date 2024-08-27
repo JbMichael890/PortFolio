@@ -24,7 +24,7 @@ const DoctorSite = () => {
               E-commerce product page
             </nav>
             <p>
-              Successfully crafted an engaging product <br /> page featuring a dynamic lightbox gallery and prices <br /> of a commodity.
+            The improvement of health via the prevention, diagnosis,<br /> treatment, amelioration or cure of disease, illness  and<br /> injury.
             </p>
           </TextOne>
           <TextTwo>
