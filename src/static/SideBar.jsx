@@ -40,11 +40,17 @@ const Container = styled.div`
   display: flex;
   justify-content: flex-end;`
 const Wrapper = styled.div`
-background-color: #1c1c1f;
-  height: 65vh;
-  width: 200px;
+background-color: #333338;
+  height: 35vh;
+  width: 100%;
   color: indigo;
   font-weight: 800;
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  align-items: center;
+
+  
   nav {
     color: #ddd;
     cursor: pointer;

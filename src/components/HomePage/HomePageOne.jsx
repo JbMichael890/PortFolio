@@ -19,12 +19,14 @@ const HomePageOne = () => {
             accessible and user friendly websites.
           </p>
           <LogoHold>
-            <button>
+         <a href="/contact">
+         <button>
               Contact Me <main>●</main>{" "}
               <span>
                 <MdArrowOutward />
               </span>
             </button>
+         </a>
 
             <Link
               to={"https://github.com/JbMichael890"}
@@ -103,6 +105,9 @@ const TextHold = styled.div`
 const LogoHold = styled.div`
   display: flex;
   align-items: center;
+  a{
+    text-decoration: none;
+  }
   button {
     @media (max-width: 500px) {
       width: 150px;
