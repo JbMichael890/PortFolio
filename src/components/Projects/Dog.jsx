@@ -24,7 +24,7 @@ const Dog = () => {
               E-commerce product page
             </nav>
             <p>
-              Successfully crafted an engaging product <br /> page featuring a dynamic lightbox gallery and prices <br /> of a commodity.
+              A website showcasing a roundum picture of dogs for dog lovers.
             </p>
           </TextOne>
           <TextTwo>

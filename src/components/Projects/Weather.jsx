@@ -24,7 +24,7 @@ const Weather = () => {
               E-commerce product page
             </nav>
             <p>
-              Successfully crafted an engaging product <br /> page featuring a dynamic lightbox gallery and prices <br /> of a commodity.
+              This a Weather site shocasing the current users location 
             </p>
           </TextOne>
           <TextTwo>

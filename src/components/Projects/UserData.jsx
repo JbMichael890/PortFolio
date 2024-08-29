@@ -24,7 +24,7 @@ const UserData = () => {
               E-commerce product page
             </nav>
             <p>
-              Successfully crafted an engaging product <br /> page featuring a dynamic lightbox gallery and prices <br /> of a commodity.
+            The information stored, processed, and handled <br /> by individuals or organizations in a secure manner <br /> to maintain its integrity.
             </p>
           </TextOne>
           <TextTwo>

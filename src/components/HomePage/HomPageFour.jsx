@@ -18,13 +18,13 @@ const HomePageFour = () => {
             </ImgHold>
           </CardHold>
         </HolderOne>
+
         <TextHold>
           <TextOne>
-            <nav>
-              E-commerce product page
-            </nav>
+            <nav>E-commerce product page</nav>
             <p>
-              Successfully crafted an engaging product <br /> page featuring a dynamic lightbox gallery and prices <br /> of a commodity.
+              Successfully crafted an engaging product <br /> page featuring a
+              dynamic lightbox gallery and prices <br /> of a commodity.
             </p>
           </TextOne>
           <TextTwo>
@@ -49,9 +49,12 @@ const HomePageFour = () => {
           </TextTwo>
           <TextThree>
             <Logo>
-              <Link to={"https://fabric-store.netlify.app"} style={{
-                textDecoration: "none"
-              }}>
+              <Link
+                to={"https://fabric-store.netlify.app"}
+                style={{
+                  textDecoration: "none",
+                }}
+              >
                 <nav>
                   LIVE DEMO <HiOutlineArrowUpRight />
                 </nav>
@@ -60,9 +63,12 @@ const HomePageFour = () => {
               <hr />
             </Logo>
             <LogoTwo>
-              <Link to={"https://github.com/JbMichael890/Fabric-Store"} style={{
-                textDecoration: "none"
-              }}>
+              <Link
+                to={"https://github.com/JbMichael890/Fabric-Store"}
+                style={{
+                  textDecoration: "none",
+                }}
+              >
                 <nav>
                   SEE ON GITHUB <FaGithub />
                 </nav>
@@ -176,7 +182,7 @@ const Role = styled.div`
 const Logo = styled.div`
   cursor: pointer;
   margin-right: 10px;
-  
+
   nav {
     font-weight: 500;
     color: #d3e97a;
@@ -192,7 +198,7 @@ const TextThree = styled.div`
   display: flex;
   align-items: center;
   margin-top: 30px;
-  
+
   nav {
     font-weight: 500;
     color: #d3e97a;

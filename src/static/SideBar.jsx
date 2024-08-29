@@ -41,7 +41,7 @@ const Container = styled.div`
   justify-content: flex-end;`
 const Wrapper = styled.div`
 background-color: #333338;
-  height: 35vh;
+  height: 30vh;
   width: 100%;
   color: indigo;
   font-weight: 800;
