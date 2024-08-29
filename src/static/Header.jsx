@@ -2,7 +2,7 @@ import { MdOutlineMenu } from "react-icons/md";
 import SideBar from "./SideBar";
 import styled from "styled-components";
 import { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   // const alertUser = () => {
@@ -27,16 +27,16 @@ const Header = () => {
           </NameHold>
 
           <Holder>
-            <a href="/">
+            <MainNav to="/">
               <nav>Home</nav>
-            </a>
-            <a href="/project">
-            <nav>Project</nav></a>
-            <a href="/about">
+            </MainNav>
+            <MainNav to="/project">
+            <nav>Project</nav></MainNav>
+            <MainNav to="/about">
               <nav>About</nav>
-            </a>
-           <a href="/contact">
-           <nav>Contact</nav></a>
+            </MainNav>
+           <MainNav to="/contact">
+           <nav>Contact</nav></MainNav>
           </Holder>
         </Wrapper>
         <Sidenav onClick={getToggle}>
@@ -79,9 +79,12 @@ const Holder = styled.div`
   }
   nav {
     margin: 0px 10px;
-    color: white;
+    /* color: white; */
     cursor: pointer;
     font-weight: 500;
+    /* &:hover {
+    color: rgb(37 99 235);
+  } */
   }
   @media (max-width: 600px) {
     display: none;
@@ -94,4 +97,11 @@ const Sidenav = styled.div`
     font-size: 25px;
     cursor: pointer;
   }`
+  const MainNav = styled(NavLink)`
+  color: #fff;
   
+  &.active {
+    color: rgb(37 99 235);
+  }
+  
+  `
