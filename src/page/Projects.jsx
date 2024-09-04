@@ -14,7 +14,6 @@ const Projects = () => {
       <Movie />
       <DoctorSite />
       <NBA />
-
       <FabricStore />
       <GlobalTeam />
       <UserData />

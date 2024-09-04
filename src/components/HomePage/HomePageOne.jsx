@@ -5,7 +5,6 @@ import Profile from "../../assets/WhatsApp Image 2024-07-30 at 11.58.50_b4276ce2
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-
 const HomePageOne = () => {
   return (
     <Container>
@@ -15,18 +14,20 @@ const HomePageOne = () => {
             HI, I AM <br /> AKINYELE MICHAEL.
           </h1>
           <p>
-            A Sydney based front-end developer passionate about building <br />
-            accessible and user friendly websites.
+            I'm a junior front-end developer,web developer specializing <br />{" "}
+            in creating user-friendly and visually appealing websites <br /> and
+            applications using HTML, CSS, JavaScript, and <br /> other front-end
+            technologies.
           </p>
           <LogoHold>
-         <a href="/contact">
-         <button>
-              Contact Me <main>●</main>{" "}
-              <span>
-                <MdArrowOutward />
-              </span>
-            </button>
-         </a>
+            <a href="/contact">
+              <button>
+                Contact Me <main>●</main>{" "}
+                <span>
+                  <MdArrowOutward />
+                </span>
+              </button>
+            </a>
 
             <Link
               to={"https://github.com/JbMichael890"}
@@ -61,6 +62,7 @@ const Container = styled.div`
   align-items: center;
   background-color: black;
   width: 100%;
+  margin-top: 100px;
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -105,7 +107,7 @@ const TextHold = styled.div`
 const LogoHold = styled.div`
   display: flex;
   align-items: center;
-  a{
+  a {
     text-decoration: none;
   }
   button {
