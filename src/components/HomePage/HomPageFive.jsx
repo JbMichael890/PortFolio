@@ -13,14 +13,34 @@ const HomPageFive = () => {
             Has Mechananical Engineering background.
           </nav>
           <p>
-            I am a front-end developer based in Sydney looking for exciting
-            opportunities. Has <br />
-            Mechanical Engineering background. Likes to focus on accessibility
-            when developing. <br /> Passionate and curious about solving
-            problems. Currently, i"m exploring Reactjs, <br /> Webflow and a bit
-            of Designing. While i am not programming, i enjoy playing
-            Basketball, <br /> Listening to Music and Photography. Learning more
-            to improve skills.
+            <main>
+              I'm a junior front-end developer specializing in creating
+              user-friendly and <br />
+              visually appealing websites and applications using HTML, CSS,
+              JavaScript, <br />
+              and other front-end technologies. My skills include:
+            </main>
+            <br />
+            <body>
+              - Building responsive and mobile-friendly interfaces
+              <br />
+              - Writing clean, efficient, and well-documented code
+              <br />
+              - Collaborating with designers and back-end developers to bring
+              ideas to life
+              <br />
+              -Troubleshooting and debugging issues
+              <br />- Staying up-to-date with the latest front-end trends and
+              technologies
+            </body>
+            <br />
+            <br />
+            <br />
+            <main>
+              I'm excited to continue learning and growing as a developer, and{" "}
+              <br /> I'm always looking for new challenges and opportunities to
+              improve my skills!
+            </main>
           </p>
           <Icon>
             <Logo>
@@ -67,26 +87,21 @@ const Holder = styled.div`
   nav {
     font-size: 34px;
     font-weight: 450;
-    @media (max-width: 500px) {
+    @media (max-width: 890px) {
       font-size: 27px;
       br {
         display: none;
       }
     }
-    @media (max-width: 450px) {
+    @media (max-width: 50px) {
       font-size: 25px;
     }
     @media (max-width: 350px) {
-      font-size: 23px;
+      font-size: 18px;
     }
   }
   p {
     font-size: 18px;
-    @media (max-width: 500px) {
-      br {
-        display: none;
-      }
-    }
     @media (max-width: 450px) {
       font-size: 17px;
     }
@@ -95,6 +110,24 @@ const Holder = styled.div`
     }
     @media (max-width: 350px) {
       font-size: 14px;
+    }
+  }
+  main {
+    br {
+      @media (max-width: 500px) {
+        /* display: none; */
+      }
+    }
+  }
+  body {
+    br {
+      @media (max-width: 500px) {
+        /* display: none; */
+      }
+    }
+
+    @media (max-width: 500px) {
+      /* font-size: 13px; */
     }
   }
 `;

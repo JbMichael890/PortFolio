@@ -32,7 +32,6 @@ const AboutPageThree = () => {
             <CardTwelve>
               <nav>REACTJS</nav>
             </CardTwelve>
-
             <CardFive>
               <nav>SWEATALERT</nav>
             </CardFive>
@@ -75,6 +74,7 @@ const Wrapper = styled.div`
   justify-content: space-around;
   width: 85%;
   flex-wrap: wrap;
+  margin-top: 30px;
   h1 {
     font-size: 40px;
     @media (max-width: 600px) {
@@ -92,28 +92,24 @@ const Wrapper = styled.div`
   }
 `;
 const TextHold = styled.div`
-width: 50%;
-/* flex-wrap: wrap; */
-@media (max-width: 500px) {
-  width: 100%;
-}
+  width: 50%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 const Text = styled.div`
-
-p{
- @media (max-width: 500px) {
-  br{
-  display: none;
-}
- }
-}
+  p {
+    @media (max-width: 500px) {
+      br {
+        display: none;
+      }
+    }
+  }
 `;
 const Card = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  main {
-  }
   nav {
     font-size: 15px;
     font-weight: 500;
@@ -208,13 +204,13 @@ const CardEight = styled.div`
   margin: 12px 12px;
 `;
 const Header = styled.div`
-width: 30%;
-@media (max-width: 700px) {
-  width: 100%;
-}
+  width: 30%;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `;
 const CardNine = styled.div`
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 53px;
@@ -225,7 +221,7 @@ display: flex;
   margin: 12px 12px;
 `;
 const CardTen = styled.div`
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 53px;
@@ -236,7 +232,7 @@ display: flex;
   margin: 12px 12px;
 `;
 const CardEleven = styled.div`
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 53px;
@@ -245,10 +241,9 @@ display: flex;
   border-radius: 25px;
   border: 1px solid #ddd;
   margin: 12px 12px;
-
 `;
 const CardTwelve = styled.div`
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 53px;
@@ -257,5 +252,4 @@ display: flex;
   border-radius: 25px;
   border: 1px solid #ddd;
   margin: 10px 10px;
-
-`
+`;

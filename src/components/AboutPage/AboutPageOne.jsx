@@ -17,14 +17,36 @@ const AboutPageOne = () => {
               Engineering background.
             </nav>
             <p>
-              I am a front-end developer based in Sydney looking for exciting
-              opportunities. Has <br />
-              MechanicalEngineering background. Likes to focus on accessibility
-              when developing. <br /> Passionate and curious about solving
-              problems. Currently, i"m exploring Reactjs, <br /> Webflow and a
-              bit of Designing. While i am not programming, i enjoy playing
-              Basketball, <br /> Listening to Music and Photography. Learning
-              more to improve skills
+              <main>
+                I'm a junior front-end developer specializing in creating
+                user-friendly and <br />
+                visually appealing websites and applications using HTML, CSS,
+                JavaScript, <br />
+                and other front-end technologies. My skills include:
+              </main>
+              <br />
+              <body>
+                - Building responsive and mobile-friendly interfaces
+                <br />
+                - Writing clean, efficient, and well-documented code
+                <br />
+                - Collaborating with designers and back-end developers to bring
+                ideas to life
+                <br />
+                -Troubleshooting and debugging issues
+                <br />- Staying up-to-date with the latest front-end trends and
+                technologies
+              </body>
+              <br />
+              <br />
+              <br />
+              <main>
+                I'm excited to continue learning and growing as a developer, and{" "}
+                <br /> I'm always looking for new challenges and opportunities
+                to improve my skills!. <br /> While i am not programming, i
+                enjoy playing Basketball, Listening <br />
+                to Music and Photography. Learning more to improve skills.
+              </main>
             </p>
           </TextOne>
           <LogoHold>
@@ -65,6 +87,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 90vh;
+  margin-top: 50px;
 `;
 const Wrapper = styled.div`
   margin-top: 30px;
@@ -72,12 +95,12 @@ const Wrapper = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   width: 85%;
+  @media (max-width: 945px) {
+    align-items: center;
+  }
   h1 {
     font-size: 50px;
   }
-  /* @media (max-width: 450px) {
-    text-align: center;
-  } */
 `;
 const TextHold = styled.div`
   @media (max-width: 450px) {
@@ -85,16 +108,33 @@ const TextHold = styled.div`
   }
   br {
     @media (max-width: 600px) {
-      display: none;
+      /* display: none; */
     }
   }
 `;
 const TextOne = styled.div`
   nav {
     font-size: 29px;
-     @media (max-width: 450px) {
+    @media (max-width: 890px) {
       font-size: 24px;
-      
+    }
+    @media (max-width: 500px) {
+      font-size: 22px;
+    }
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
+    br {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+  main {
+    br {
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
   }
 `;
@@ -159,7 +199,6 @@ const LogoHold = styled.div`
     align-items: center;
     border-radius: 25px;
     font-size: 25px;
-   
   }
   main {
     font-weight: 900;
@@ -169,3 +208,10 @@ const LogoHold = styled.div`
     }
   }
 `;
+// opportunities. Has <br />
+// MechanicalEngineering background. Likes to focus on accessibility
+// when developing. <br /> Passionate and curious about solving
+// problems. Currently, i"m exploring Reactjs, <br /> Webflow and a
+// bit of Designing. While i am not programming, i enjoy playing
+// Basketball, <br /> Listening to Music and Photography. Learning
+// more to improve skills

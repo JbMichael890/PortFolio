@@ -5,14 +5,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  // const alertUser = () => {
-  //   Swal.fire({
-  //     title: "Update Coming",
-  //     text: "The detail page is not yet available",
-  //     icon: "info",
-  //   });
   const [toggle, setToggle] = useState(false);
-  
 
   const getToggle = () => {
     setToggle(!toggle);
@@ -31,12 +24,14 @@ const Header = () => {
               <nav>Home</nav>
             </MainNav>
             <MainNav to="/project">
-            <nav>Project</nav></MainNav>
+              <nav>Project</nav>
+            </MainNav>
             <MainNav to="/about">
               <nav>About</nav>
             </MainNav>
-           <MainNav to="/contact">
-           <nav>Contact</nav></MainNav>
+            <MainNav to="/contact">
+              <nav>Contact</nav>
+            </MainNav>
           </Holder>
         </Wrapper>
         <Sidenav onClick={getToggle}>
@@ -61,7 +56,6 @@ const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
- 
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -79,12 +73,8 @@ const Holder = styled.div`
   }
   nav {
     margin: 0px 10px;
-    /* color: white; */
     cursor: pointer;
     font-weight: 500;
-    /* &:hover {
-    color: rgb(37 99 235);
-  } */
   }
   @media (max-width: 600px) {
     display: none;
@@ -96,12 +86,12 @@ const Sidenav = styled.div`
     display: flex;
     font-size: 25px;
     cursor: pointer;
-  }`
-  const MainNav = styled(NavLink)`
+  }
+`;
+const MainNav = styled(NavLink)`
   color: #fff;
-  
+
   &.active {
     color: rgb(37 99 235);
   }
-  
-  `
+`;

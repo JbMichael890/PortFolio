@@ -14,9 +14,9 @@ const HomePageOne = () => {
             HI, I AM <br /> AKINYELE MICHAEL.
           </h1>
           <p>
-            I'm a junior front-end developer,web developer specializing <br />{" "}
-            in creating user-friendly and visually appealing websites <br /> and
-            applications using HTML, CSS, JavaScript, and <br /> other front-end
+            I'm a junior front-end developer,web developer specializing {" "}
+            in creating <br />user-friendly and visually appealing websites and
+            applications using <br />HTML, CSS, JavaScript, and other front-end
             technologies.
           </p>
           <LogoHold>
