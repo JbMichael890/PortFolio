@@ -50,12 +50,14 @@ const AboutPageOne = () => {
             </p>
           </TextOne>
           <LogoHold>
-            <button>
+           <ButtonHolder>
+           <button>
               DOWNLOAD RESUME <main>●</main>{" "}
               <span>
                 <RiDownload2Line />
               </span>
             </button>
+           </ButtonHolder>
             <Link
               to={"https://github.com/JbMichael890"}
               style={{ textDecoration: "none" }}
@@ -87,7 +89,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  margin-top: 50px;
+  margin-top: px;
 `;
 const Wrapper = styled.div`
   margin-top: 30px;
@@ -208,6 +210,12 @@ const LogoHold = styled.div`
     }
   }
 `;
+const ButtonHolder = styled.div`
+   :hover {
+      transform: scale(0.9);
+      transition: all 500ms;
+    }
+`
 // opportunities. Has <br />
 // MechanicalEngineering background. Likes to focus on accessibility
 // when developing. <br /> Passionate and curious about solving

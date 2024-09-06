@@ -70,7 +70,7 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 85%;
   margin-top: 50px;
   flex-wrap: wrap;
@@ -93,8 +93,11 @@ const Holder = styled.div`
         display: none;
       }
     }
-    @media (max-width: 50px) {
-      font-size: 25px;
+    @media (max-width: 500px) {
+      font-size: 22px;
+    }
+    @media (max-width:400px) {
+      font-size: 20px;
     }
     @media (max-width: 350px) {
       font-size: 18px;

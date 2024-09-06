@@ -13,14 +13,14 @@ const Footer = () => {
       text: "The detail page is not yet available",
       icon: "info",
     });
-  }
+  };
   return (
     <Containee>
       <Wrapper>
         <TextOne>
           <h1>LET'S CONNECT</h1>
-        <p>
-           Say hello at
+          <p>
+            Say hello at
             <span>
               michaelakinyele833@gmail.com <hr />
             </span>
@@ -33,31 +33,38 @@ const Footer = () => {
           </main>
 
           <LogoHold>
-         <a href="09058118114">
-         <Call>
-              <nav><FiPhoneCall/></nav>
-            </Call>
-         </a>
-          <a href="https://web.facebook.com/mickey.frosh.39948">
-          <Fb> <nav><FaFacebook/></nav></Fb>
-          </a>
-          <Git>
-          <a href="https://github.com/JbMichael890">
-          <nav>
-              <FaGithub />
-            </nav>
-          </a>
-          </Git>
-         <Twitter>
-         <nav>
-              <FaXTwitter />
-            </nav>
-         </Twitter>
-           <Insta>
-           <nav>
-              <GrInstagram />
-            </nav>
-           </Insta>
+            <a href="09058118114">
+              <Call>
+                <nav>
+                  <FiPhoneCall />
+                </nav>
+              </Call>
+            </a>
+            <a href="https://web.facebook.com/mickey.frosh.39948">
+              <Fb>
+                {" "}
+                <nav>
+                  <FaFacebook />
+                </nav>
+              </Fb>
+            </a>
+            <Git>
+              <a href="https://github.com/JbMichael890">
+                <nav>
+                  <FaGithub />
+                </nav>
+              </a>
+            </Git>
+            <Twitter>
+              <nav>
+                <FaXTwitter />
+              </nav>
+            </Twitter>
+            <Insta>
+              <nav>
+                <GrInstagram />
+              </nav>
+            </Insta>
           </LogoHold>
         </TextOne>
 
@@ -78,9 +85,9 @@ const Footer = () => {
             <main>Message</main>
             <textarea role="1" />
           </HoldFour>
-        <ButtonHold>
-        <button onClick={alertUser}>SUBMIT</button>
-        </ButtonHold>
+          <ButtonHold>
+            <button onClick={alertUser}>SUBMIT</button>
+          </ButtonHold>
         </InputHold>
       </Wrapper>
     </Containee>
@@ -125,16 +132,14 @@ const TextOne = styled.div`
     @media (max-width: 500px) {
       font-size: 15.5px;
     }
-    @media (max-width:400px) {
+    @media (max-width: 400px) {
       font-size: 13px;
     }
-    
   }
   main {
     font-size: 18px;
     display: flex;
     margin-top: -19px;
-
   }
   span {
     margin-left: 5px;
@@ -199,28 +204,31 @@ const HoldFour = styled.div`
   }
 `;
 const Fb = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 50px;
-width: 50px;
-background-color: #f5f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f8fc;
   transition: all 350ms;
   cursor: pointer;
   margin-right: 5px;
-&:hover{
-  background-color: #007bb6;
-}
-  
-`
+  &:hover {
+    background-color: #007bb6;
+  }
+`;
 const ButtonHold = styled.div`
-@media (max-width: 600px) {
-  display: flex;
-justify-content: center;
-align-items: center;
-}
+ :hover {
+      transform: scale(1.01);
+      transition: all 400ms;
+    }
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-button {
+  button {
     height: 50px;
     width: 150px;
     border-radius: 24px;
@@ -230,61 +238,62 @@ button {
     border: none;
     margin-top: 30px;
     cursor: pointer;
+   
   }
-  
-`
+`;
 const Git = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 50px;
-width: 50px;
-background-color: #f5f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f8fc;
   transition: all 350ms;
   cursor: pointer;
   margin-right: 5px;
-  &:hover{
+  &:hover {
     background-color: #32ccfe;
-  }`
+  }
+`;
 const Twitter = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 50px;
-width: 50px;
-background-color: #f5f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f8fc;
   transition: all 350ms;
   cursor: pointer;
   margin-right: 5px;
-  &:hover{
-    background-color: #FDCC91;
+  &:hover {
+    background-color: #fdcc91;
   }
-  `
+`;
 const Insta = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 50px;
-width: 50px;
-background-color: #f5f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f8fc;
   transition: all 350ms;
   cursor: pointer;
-  &:hover{
-    background-color: #EC4A89;
+  &:hover {
+    background-color: #ec4a89;
   }
-  `
+`;
 const Call = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 50px;
-width: 50px;
-background-color: #f5f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #f5f8fc;
   transition: all 350ms;
   cursor: pointer;
   margin-right: 5px;
-  &:hover{
+  &:hover {
     background-color: #3a589b;
     color: white;
   }
-  `
+`;
