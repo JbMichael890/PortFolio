@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa6";
-import Image from "../../assets/Screenshot 2024-08-15 184720.png";
+import Image from "../../assets/Screenshot 2024-09-10 035924.png";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
-const Weather = () => {
+const BeLang = () => {
   return (
     <Container>
       <Wrapper>
         <HolderOne>
           <CardHold>
             <ButtonHold>
-              <button>Global-Team</button>
+              <button>BeLangSchool</button>
             </ButtonHold>
             <ImgHold>
               <img src={Image} alt="" />
@@ -20,11 +20,11 @@ const Weather = () => {
         </HolderOne>
         <TextHold>
           <TextOne>
-            <nav>Everything you need to scale a Global team. </nav>
+            <nav>
+              BeLangSchool
+            </nav>
             <p>
-              The idea of creating this site came up when i was still trying{" "}
-              <br /> to be perfect on how i call my border-line and how to use{" "}
-              <br /> it in making design.
+              A website showcasing a roundum picture of dogs for dog lovers.
             </p>
           </TextOne>
           <TextTwo>
@@ -49,12 +49,9 @@ const Weather = () => {
           </TextTwo>
           <TextThree>
             <Logo>
-              <Link
-                to={"https://global-team.vercel.app/"}
-                style={{
-                  textDecoration: "none",
-                }}
-              >
+              <Link to={"https://belangschool.vercel.app/"} style={{
+                textDecoration: "none"
+              }}>
                 <nav>
                   LIVE DEMO <HiOutlineArrowUpRight />
                 </nav>
@@ -63,12 +60,9 @@ const Weather = () => {
               <hr />
             </Logo>
             <LogoTwo>
-              <Link
-                to={"https://github.com/JbMichael890/Global-Team"}
-                style={{
-                  textDecoration: "none",
-                }}
-              >
+              <Link to={"https://github.com/JbMichael890/Dog-App"} style={{
+                textDecoration: "none"
+              }}>
                 <nav>
                   SEE ON GITHUB <FaGithub />
                 </nav>
@@ -82,7 +76,7 @@ const Weather = () => {
   );
 };
 
-export default Weather;
+export default BeLang;
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -182,7 +176,7 @@ const Role = styled.div`
 const Logo = styled.div`
   cursor: pointer;
   margin-right: 10px;
-
+  
   nav {
     font-weight: 500;
     color: #d3e97a;
@@ -198,7 +192,7 @@ const TextThree = styled.div`
   display: flex;
   align-items: center;
   margin-top: 30px;
-
+  
   nav {
     font-weight: 500;
     color: #d3e97a;
@@ -245,8 +239,9 @@ const ImgHold = styled.div`
     @media (max-width: 600px) {
       width: 300px;
     }
-    @media (max-width: 400px) {
-      width: 280px;
+    @media (max-width: 450px) {
+        width: 280px;
+        height: 170px;
     }
   }
 `;

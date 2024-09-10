@@ -1,3 +1,4 @@
+import BeLang from "../components/Projects/BeLang";
 import DoctorSite from "../components/Projects/DoctorSite";
 import Dog from "../components/Projects/Dog";
 import FabricStore from "../components/Projects/FabricStore";
@@ -12,8 +13,9 @@ const Projects = () => {
   return (
     <div>
       <Movie />
-      <DoctorSite />
       <NBA />
+      <BeLang />
+      <DoctorSite />
       <FabricStore />
       <GlobalTeam />
       <UserData />

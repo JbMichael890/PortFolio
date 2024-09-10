@@ -21,7 +21,7 @@ const DoctorSite = () => {
         <TextHold>
           <TextOne>
             <nav>
-              E-commerce product page
+          Health-Care Service
             </nav>
             <p>
             The improvement of health via the prevention, diagnosis,<br /> treatment, amelioration or cure of disease, illness  and<br /> injury.
